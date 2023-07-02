@@ -4,15 +4,15 @@ Tags: AI, Nureal Network, Python
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled.png)
 
-### Summary
+## Summary
 
 ---
 
-In this project i programmed a neural network from scratch using only numpy arrays. 
+In this project a neural network consisting of several hidden layers are programmed from scratch using only numpy arrays. 
 
- - Coding process contains mathematical explanations and their code equivalents.
+ - Below paragraphs consists of the inner workings of the programmed neural network.
 
-### Coding Process
+## Coding Process
 
 ---
 
@@ -24,11 +24,11 @@ The inner workings of the neural network consist of 2 mathematical steps which i
 
 ************Forward Propogation************
 
-In forward propagation i need to calculate next layer values which can be calculated using this formula:
+In forward propagation we need to calculate next layer values which can be calculated using this formula:
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%201.png)
 
-Since its a matrix multiplication operation i stored perceptron values in a vector and used  "`@`” for the forward propagation alghoritm and also squashed the values for it to give better results. Which results in this forward propagation function:
+Since we need to do a matrix multiplication operation perceptron values are stored in a vector. That way perceptron values can be multiplied seamleasly by using "`@`” symbol. After the matrix multiplication calculated values are squashed and stored. The way matrix multiplication performed is shown below:
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%202.png)
 
@@ -36,16 +36,19 @@ Since its a matrix multiplication operation i stored perceptron values in a vect
 
 ********************************Back Propagation********************************
 
-For neural network to learn from its mistakes we need to calculate the error according to the weight parameters which can be obtained by using chain rule which is:
+For neural network to learn from its mistakes we need to calculate the error according to the weight parameters which can be obtained by using chain rule which is shown below:
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%203.png)
 
-Because we are using sigmoid as squashing function gradient of  Perceptron value to its non-squashed value can be calculated with this formula:
+Because we are using sigmoid as squashing function gradient of Perceptron value to its non-squashed value can be calculated with this formula:
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%204.png)
 
- Since there is no expected value for the hidden layers we are using next layers error to calculate hidden layers error which is 
+ Since there is no expected value for the hidden layers we are using the next layer error to calculate hidden layer error. That formula can be seen below: 
 
-### The design
+!![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%205.png)
 
+ After calculating the error for each perceptrons chain rule can be applied to each of them to calculate the change in weights for the output. The code segment that is calculating the back propagation is shown below: 
+
+ !![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%206.png)
 ---
