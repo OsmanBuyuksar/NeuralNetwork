@@ -51,4 +51,10 @@ Because we are using sigmoid as squashing function gradient of Perceptron value 
  After calculating the error for each perceptrons chain rule can be applied to each of them to calculate the change in weights for the output. Then the change in weights are multiplied with the learning factor and final value is subtracted from the actual weights to update the weights. The code segment that is calculating the back propagation is shown below: 
 
  ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled%206.png)
+
+
+## Prediction
+
+ For training the network forward and backward propogations are performed sequentially for each data. After the training set is done, prediction of the model for any given test set is calculated by using forward propagation on the given data. 
+
 ---
