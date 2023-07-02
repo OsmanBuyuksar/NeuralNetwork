@@ -1,7 +1,5 @@
 # Back Propagation Alghoritm
 
-Created: May 3, 2023 6:57 PM
-Link: https://github.com/OsmanBuyuksar/NeuralNetwork
 Tags: AI, Nureal Network, Python
 
 ![Untitled](Back%20Propagation%20Alghoritm%20f331bed106aa4d8c9d64ff008a5e9dc5/Untitled.png)
