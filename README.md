@@ -8,7 +8,7 @@ Tags: AI, Nureal Network, Python
 
 ---
 
-In this project a neural network consisting of several hidden layers are programmed from scratch using only numpy arrays. 
+In this project a neural network consisting of several hidden layers are programmed from scratch using only numpy arrays for learning purposes. 
 
  - Below paragraphs consists of the inner workings of the programmed neural network.
 
